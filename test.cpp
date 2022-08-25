@@ -21,8 +21,6 @@ ostream &print(ostream &os,const T& t,const Args&... rest)
     return print(os,rest...);
 }
 
-
-
 int main(int argc,char **argv)
 {
     print(cout,1,2,3,7);
