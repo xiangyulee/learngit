@@ -7,7 +7,7 @@
 #include<iostream>
 #include<sstream>
 using namespace std;
-namespace myf{
+
 template <typename T>
 ostream &print(ostream &os,const T& t)
 {
@@ -20,12 +20,11 @@ ostream &print(ostream &os,const T& t,const Args&... rest)
     os<<t<<", ";
     return print(os,rest...);
 }
-}
+
 
 
 int main(int argc,char **argv)
 {
-    using namespace myf;
     print(cout,1,2,3,7);
     return 0;
 }
